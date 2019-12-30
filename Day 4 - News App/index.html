@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day 4 - News App</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>News App</h1>
+
+    <div class="container">
+      <form id="search">
+        <input type="text" id="query" placeholder="Search for any term..." />
+
+        <button type="submit" id="submit">Search</button>
+      </form>
+
+      <div class="error"></div>
+
+      <div class="news">
+        <!-- News cards -->
+        <h3>The top news will appear here.</h3>
+      </div>
+    </div>
+
+    <p class="footer">
+      Powered by - <a href="http://newsapi.org" target="_blank">NewsAPI.org</a>
+    </p>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+      integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day 3 - Message Translation App</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Message Translation App</h1>
+
+      <form id="translate-form">
+        <label for="text">Choose your language</label>
+        <select name="text-lang" id="text-lang">
+          <option value="ar">Arabic (ar)</option>
+          <option value="zh">Chinese (zh)</option>
+          <option value="en">English (en)</option>
+          <option value="fr">French (fr)</option>
+          <option value="de">German (de)</option>
+          <option value="el">Greek (el)</option>
+          <option value="hi">Hindi (hi)</option>
+          <option value="ja">Japanese (ja)</option>
+          <option value="ko">Korean (ko)</option>
+          <option value="pl">Polish (pl)</option>
+          <option value="ru">Russian (ru)</option>
+          <option value="es">Spanish (es)</option>
+          <option value="sv">Swedish (sv)</option>
+          <option value="tr">Turkish (tr)</option>
+          <option value="ur">Urdu (ur)</option>
+        </select>
+
+        <label for="text">Enter your message</label>
+        <textarea name="text" id="text"></textarea>
+
+        <label for="lang">Translate to</label>
+        <select name="lang" id="lang">
+          <option value="ar">Arabic (ar)</option>
+          <option value="zh">Chinese (zh)</option>
+          <option value="en">English (en)</option>
+          <option value="fr">French (fr)</option>
+          <option value="de">German (de)</option>
+          <option value="el">Greek (el)</option>
+          <option value="hi">Hindi (hi)</option>
+          <option value="ja">Japanese (ja)</option>
+          <option value="ko">Korean (ko)</option>
+          <option value="pl">Polish (pl)</option>
+          <option value="ru">Russian (ru)</option>
+          <option value="es">Spanish (es)</option>
+          <option value="sv">Swedish (sv)</option>
+          <option value="tr">Turkish (tr)</option>
+          <option value="ur">Urdu (ur)</option>
+        </select>
+        <button type="submit" id="btn">Translate</button>
+      </form>
+
+      <h3>Translation <span class="languages"></span></h3>
+      <div class="result"></div>
+    </div>
+
+    <p class="info">
+      *The app is using translate API from
+      <a href="https://tech.yandex.com/translate/" target="_blank"
+        >Yandex Technologies.*</a
+      >
+    </p>
+    <script src="js/main.js"></script>
+  </body>
+</html>

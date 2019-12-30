@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+// Colors
+$primary: rgba(46, 134, 222, 1);
+$secondary: rgba(34, 47, 62, 1);
+$success: rgba(16, 172, 132, 1);
+$danger: rgba(238, 82, 83, 1);
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  background-color: rgba(200, 214, 229, 0.8);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #primary,
+  #secondary,
+  #success,
+  #danger {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 3px;
+    margin: 0 2px;
+    font-size: 14px;
+    // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .btn-primary {
+    background-color: $primary;
+  }
+
+  .btn-primary-hover {
+    border: 1.5px solid $primary;
+    color: $primary;
+    background-color: #fff;
+    transition: 0.2s all;
+
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+  }
+
+  .btn-success {
+    background-color: $success;
+  }
+  .btn-success-hover {
+    border: 1.5px solid $success;
+    color: $success;
+    background-color: #fff;
+    transition: 0.2s all;
+
+    &:hover {
+      background-color: $success;
+      color: #fff;
+    }
+  }
+
+  .btn-secondary {
+    background-color: $secondary;
+  }
+  .btn-secondary-hover {
+    border: 1.5px solid $secondary;
+    color: $secondary;
+    background-color: #fff;
+    transition: 0.2s all;
+
+    &:hover {
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+
+  .btn-danger {
+    background-color: $danger;
+  }
+  .btn-danger-hover {
+    border: 1.5px solid $danger;
+    color: $danger;
+    background-color: #fff;
+    transition: 0.2s all;
+
+    &:hover {
+      background-color: $danger;
+      color: #fff;
+    }
+  }
+
+  .large {
+    font-size: 20px;
+    padding: 12px 30px;
+  }
+
+  .small {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+}

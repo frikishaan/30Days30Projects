@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  background-color: rgba(200, 214, 229, 0.8);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #primary,
+.container #secondary,
+.container #success,
+.container #danger {
+  margin-bottom: 1rem;
+}
+
+.container .btn {
+  border: none;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 2px;
+  font-size: 14px;
+}
+
+.container .btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.container .btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.container .btn:focus {
+  outline: none;
+}
+
+.container .btn-primary {
+  background-color: #2e86de;
+}
+
+.container .btn-primary-hover {
+  border: 1.5px solid #2e86de;
+  color: #2e86de;
+  background-color: #fff;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.container .btn-primary-hover:hover {
+  background-color: #2e86de;
+  color: #fff;
+}
+
+.container .btn-success {
+  background-color: #10ac84;
+}
+
+.container .btn-success-hover {
+  border: 1.5px solid #10ac84;
+  color: #10ac84;
+  background-color: #fff;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.container .btn-success-hover:hover {
+  background-color: #10ac84;
+  color: #fff;
+}
+
+.container .btn-secondary {
+  background-color: #222f3e;
+}
+
+.container .btn-secondary-hover {
+  border: 1.5px solid #222f3e;
+  color: #222f3e;
+  background-color: #fff;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.container .btn-secondary-hover:hover {
+  background-color: #222f3e;
+  color: #fff;
+}
+
+.container .btn-danger {
+  background-color: #ee5253;
+}
+
+.container .btn-danger-hover {
+  border: 1.5px solid #ee5253;
+  color: #ee5253;
+  background-color: #fff;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.container .btn-danger-hover:hover {
+  background-color: #ee5253;
+  color: #fff;
+}
+
+.container .large {
+  font-size: 20px;
+  padding: 12px 30px;
+}
+
+.container .small {
+  font-size: 12px;
+  padding: 8px 18px;
+}
+/*# sourceMappingURL=main.css.map */

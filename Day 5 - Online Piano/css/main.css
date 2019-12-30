@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #7ed6df;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.piano {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.piano .key {
+  height: 400px;
+  border: 1px solid #353b48;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.piano .key span.key-value {
+  font-size: 16px;
+  display: none;
+}
+
+.piano .white {
+  background-color: #fff;
+  width: 100px;
+  border-radius: 3px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.piano .white:active {
+  -webkit-box-shadow: inset 0px -9px 25px -1px rgba(220, 221, 225, 0.93);
+          box-shadow: inset 0px -9px 25px -1px rgba(220, 221, 225, 0.93);
+}
+
+.piano .black {
+  background-color: #353b48;
+  height: 235px;
+  width: 60px;
+  margin-left: -31px;
+  margin-right: -31px;
+  z-index: 2;
+  border-radius: 0 0 3px 3px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.piano .black:active {
+  -webkit-box-shadow: inset 0px -9px 29px 29px #2f3640;
+          box-shadow: inset 0px -9px 29px 29px #2f3640;
+}
+
+.piano .black-active {
+  -webkit-box-shadow: inset 0px -9px 29px 29px #2f3640;
+          box-shadow: inset 0px -9px 29px 29px #2f3640;
+}
+
+.piano .white-active {
+  -webkit-box-shadow: inset 0px -9px 25px -1px rgba(220, 221, 225, 0.93);
+          box-shadow: inset 0px -9px 25px -1px rgba(220, 221, 225, 0.93);
+}
+
+p {
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .piano {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  p {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
