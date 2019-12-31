@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day 6 - Notes Taking App</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Notes taking App</h1>
+      <p class="info">
+        Write down notes and save it using <code>Ctrl+Enter</code>.
+      </p>
+      <!-- Form -->
+      <form id="add-note">
+        <textarea id="note"></textarea>
+        <button type="submit">
+          Add note &nbsp;<i class="fas fa-plus-circle"></i>
+        </button>
+      </form>
+
+      <!-- notes -->
+      <div class="notes"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

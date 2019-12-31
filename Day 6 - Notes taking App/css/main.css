@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f5f6fa;
+}
+
+.container {
+  width: 50%;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .info {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container form textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 4px;
+  font-size: 18px;
+  outline: none;
+  padding: 12px;
+  border-color: #dcdde1;
+}
+
+.container form textarea:focus {
+  -webkit-box-shadow: 4px 6px 21px -4px #dcdde1;
+          box-shadow: 4px 6px 21px -4px #dcdde1;
+}
+
+.container form button {
+  display: block;
+  border: none;
+  padding: 12px 40px;
+  background-color: #ffa502;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  -webkit-box-shadow: 4px 6px 46px -4px #dcdde1;
+          box-shadow: 4px 6px 46px -4px #dcdde1;
+  outline: none;
+}
+
+.container form button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.container .notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .notes .note {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #dcdde1;
+  border-radius: 4px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.container .notes .note:hover {
+  cursor: pointer;
+  border-color: #fff;
+  -webkit-box-shadow: 4px 6px 21px -4px #dcdde1;
+          box-shadow: 4px 6px 21px -4px #dcdde1;
+}
+
+.container .notes .note .actions {
+  text-align: end;
+}
+
+.container .notes .note .actions button {
+  border: none;
+  background-color: #fff;
+  margin-right: 8px;
+  outline: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.container .notes .note .actions button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media screen and (max-width: 890px) {
+  .container {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
