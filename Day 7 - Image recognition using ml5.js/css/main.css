@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato", sans-serif;
+  background-color: #ecf0f1;
+}
+
+.loading {
+  font-size: 18px;
+  text-align: center;
+}
+
+.draggable {
+  width: 60%;
+  height: auto;
+  padding: 1rem;
+  border: 2px dashed #7f8c8d;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.draggable label {
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.draggable p {
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.draggable p span {
+  font-size: 12px;
+}
+
+.draggable input {
+  display: none;
+}
+
+.draggable .output {
+  margin-bottom: 1rem;
+}
+
+.draggable .output img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.dragover {
+  background-color: #fff;
+  border-color: #bdc3c7;
+  opacity: 0.9;
+}
+
+.labels {
+  font-size: 18px;
+  margin-top: 2rem;
+}
+
+.labels .confidence {
+  color: #16a085;
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */
