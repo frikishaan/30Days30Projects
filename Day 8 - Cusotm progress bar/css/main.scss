@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Kulim+Park&display=swap");
+
+$radius: 20px;
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  font-family: "Kulim Park", sans-serif;
+}
+h1 {
+  margin-bottom: 2rem;
+}
+.progress {
+  width: 356px;
+  min-height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: $radius;
+  background-color: #dcdde1;
+  //   text-align: center;
+
+  .inner {
+    // margin: 0;
+    width: 0;
+    height: 100%;
+    border-radius: $radius;
+    background: rgb(144, 31, 220);
+    background: linear-gradient(
+      90deg,
+      rgba(144, 31, 220, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 8px 0px;
+    text-align: center;
+    transition: 2s all;
+  }
+
+  .full {
+    animation: move 2s ease-in-out forwards;
+  }
+}
+
+@keyframes move {
+  to {
+    width: 100%;
+  }
+}
+
+.animate {
+  margin-top: 3rem;
+  padding: 12px 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #901fdc;
+  //   background-color: #0097e6;
+  color: #fff;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  outline: none;
+  transition: 0.2s all;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+p {
+  margin-top: 4rem;
+  color: grey;
+  font-size: 14px;
+
+  a {
+    color: #901fdc;
+    text-decoration: none;
+  }
+}
