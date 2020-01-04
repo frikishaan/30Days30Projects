@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 68px;
+  color: #747474;
+}
+
+h1 span.text {
+  padding: 0;
+  padding-right: 4px;
+  border-right: 2px solid #747474;
+  -webkit-animation: blink 0.75s infinite;
+          animation: blink 0.75s infinite;
+}
+
+h1 .blue {
+  color: #4480ff;
+}
+
+h1 .green {
+  color: #4caf50;
+}
+
+h1 .yellow {
+  color: #f4b400;
+}
+
+h1 .red {
+  color: #f44336;
+}
+
+p.info {
+  font-size: 12px;
+  margin-top: 6rem;
+  color: #747474;
+}
+
+p.info a {
+  text-decoration: none;
+  color: #4480ff;
+}
+
+@-webkit-keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid #747474;
+  }
+}
+
+@keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid #747474;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  h1 {
+    font-size: 40px;
+  }
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

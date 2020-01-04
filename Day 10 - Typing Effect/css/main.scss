@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+h1 {
+  font-size: 68px;
+  color: #747474;
+
+  span.text {
+    padding: 0;
+    padding-right: 4px;
+    border-right: 2px solid #747474;
+    animation: blink 0.75s infinite;
+  }
+
+  .blue {
+    color: #4480ff;
+  }
+  .green {
+    color: #4caf50;
+  }
+  .yellow {
+    color: #f4b400;
+  }
+  .red {
+    color: #f44336;
+  }
+}
+p.info {
+  font-size: 12px;
+  margin-top: 6rem;
+  color: #747474;
+
+  a {
+    text-decoration: none;
+    color: #4480ff;
+  }
+}
+
+@keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid #747474;
+  }
+}
+@media screen and (max-width: 670px) {
+  h1 {
+    font-size: 40px;
+  }
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+  }
+}
