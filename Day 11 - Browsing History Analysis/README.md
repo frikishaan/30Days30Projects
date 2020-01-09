@@ -13,6 +13,6 @@ This is a part of my #30Days30Projects. The notebook helps you find how many tim
 
 ## Example
 
-![Websites visited by me during last 6-7 months](analysis.png)
+![Websites visited by me during last 6-7 months](https://github.com/sheikh005/30Days30Projects/blob/master/Day%2011%20-%20Browsing%20History%20Analysis/analysis.PNG)
 
 ##### Made with &#128150; by [Ishaan Sheikh](http://frikishaan.xyz/) &#128521;
