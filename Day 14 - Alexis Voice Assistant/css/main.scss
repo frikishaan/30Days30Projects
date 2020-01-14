@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ecf0f1;
+}
+.error {
+  color: #e74c3c;
+  text-align: center;
+  display: none;
+}
+.start {
+  padding: 12px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 9px 10px 18px 4px rgba(0, 0, 0, 0.2);
+  background-color: #3498db;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s all;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 9px 5px 12px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  width: 50%;
+  transition: 0.5s all;
+
+  .fa-microphone {
+    &.listening {
+      color: #3498db;
+      animation: blink 2s infinite;
+    }
+  }
+
+  .command {
+    margin-top: 2rem;
+  }
+
+  h5 {
+    font-size: 22px;
+    margin-top: 4rem;
+  }
+
+  ul {
+    list-style-type: "👉 ";
+    margin-top: 1rem;
+
+    li {
+      font-size: 16px;
+    }
+  }
+  .popup {
+    font-size: 12px;
+    color: #747474;
+    margin-top: 2rem;
+  }
+}
+.info {
+  font-size: 12px;
+  color: #747474;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-size: 14px !important;
+    color: #3498db;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 80%;
+  }
+}
+@keyframes blink {
+  to {
+    color: #000;
+    transform: scale(1.02);
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day 14 - Emma Voice Assistant</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Start button -->
+
+    <h1 class="error">
+      Speech Recognition is not supported in your browser, try using Chrome.
+    </h1>
+
+    <button class="start">
+      Start talking &nbsp;<i class="fa fa-comments"></i>
+    </button>
+
+    <div class="container">
+      <i class="fa fa-microphone fa-3x"></i>
+      <!-- Recognized voice -->
+      <h3 class="command"></h3>
+
+      <h5>Voice Commands</h5>
+      <ul>
+        <li>What is your name?</li>
+        <li>My name is &lt;your-name&gt;</li>
+        <li>What time is it?</li>
+        <li>Search for &lt;your-query&gt;</li>
+        <li>Who is your creator?</li>
+        <li>Who is your favourite YouTube creator?</li>
+        <li>Bye</li>
+      </ul>
+      <!-- <span class="popup">*Please allow popups</span> -->
+    </div>
+
+    <p class="info">
+      Inspired by
+      <a href="https://youtu.be/x8xjj6cR9Nc" target="_blank">Traversy Media</a>
+      <br />
+      *The app uses an experimental API which may not work in some browsers.
+    </p>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
