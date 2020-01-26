@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 14px;
+  border: none;
+  min-width: 25%;
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 5px 3px 45px -25px rgba(0, 0, 0, 0.39);
+          box-shadow: 5px 3px 45px -25px rgba(0, 0, 0, 0.39);
+}
+
+.card img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card h2 {
+  margin-top: 4rem;
+  color: #7f8c8d;
+}
+
+.card p {
+  font-size: 14px;
+  color: #bdc3c7;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.card p.subs {
+  font-size: 35px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+
+.card a.subscribe {
+  margin-top: 20px;
+  padding: 10px 40px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  text-decoration: none;
+}
+
+.card a.subscribe:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.card ul.social {
+  margin-top: 28px;
+  list-style-type: none;
+}
+
+.card ul.social li {
+  display: inline;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.card ul.social li a {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    min-width: 30%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .card {
+    min-width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    min-width: 70%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
