@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: #9b59b6;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 7vh;
+
+  .header {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #ecf0f1;
+        padding: 12px 30px;
+        transition: 0.2s;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #823e9c;
+        }
+      }
+    }
+  }
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+  color: #ecf0f1;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 0.95;
+  background-color: #9e58b9;
+  width: 70%;
+  transform: translateX(-100%);
+  transition: 0.5s all;
+
+  span.close {
+    color: #ecf0f1;
+    float: right;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 20px 30px;
+      font-size: 22px;
+      a {
+        text-decoration: none;
+        color: #ecf0f1;
+        padding: 12px 30px;
+        transition: 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.show {
+  transform: translateY(0%);
+}
+
+.container {
+  margin: 4px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 2px;
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 1em;
+  }
+
+  button {
+    border: none;
+    padding: 10px 30px;
+    background-color: #9b59b6;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+h4 {
+  padding: 10px;
+}
+p {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    ul {
+      li {
+        a {
+          padding: 12px 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  nav {
+    ul {
+      display: none;
+    }
+  }
+  .menu {
+    display: block;
+  }
+}
