@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+
+.slider {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slider .slide {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.slider .slide img {
+  height: 100%;
+  width: 100%;
+  -webkit-filter: contrast(90%);
+          filter: contrast(90%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider .slide .caption {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 22px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.slider a.prev,
+.slider a.next {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #ffffff;
+  padding: 12px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider a.prev:hover,
+.slider a.next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+
+.slider .next {
+  right: 20px;
+}
+
+.slider .prev {
+  left: 20px;
+}
+
+.show {
+  -webkit-animation: fade 0.5s ease-out;
+          animation: fade 0.5s ease-out;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
