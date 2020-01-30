@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day X - {title}</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="inner">
+        <div class="login">
+          <form>
+            <h3>Login to your account</h3>
+            <div class="form-control">
+              <input type="text" id="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-control">
+              <input type="password" id="password" required />
+              <label for="password">Password</label>
+            </div>
+            <button>Login</button>
+
+            <a id="signup">Don't have an account</a>
+          </form>
+        </div>
+        <div class="signup">
+          <h3>Create an account</h3>
+          <form>
+            <div class="form-control">
+              <input type="text" name="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-control">
+              <input type="password" name="password_" required />
+              <label for="password_">Password</label>
+            </div>
+            <div class="form-control">
+              <input type="password" name="confirm_pass" required />
+              <label for="confirm_pass">Confirm Password</label>
+            </div>
+            <button>Signup</button>
+            <a id="login">Already have an account</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

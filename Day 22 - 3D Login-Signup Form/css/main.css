@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: transparent;
+  width: 25%;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-top: 2px solid #487eb0;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 7px 54px -26px rgba(0, 0, 0, 0.31);
+          box-shadow: 6px 7px 54px -26px rgba(0, 0, 0, 0.31);
+}
+
+.card.rotate .inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card .signup,
+.card .login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 5px;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .signup h3,
+.card .login h3 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  display: none;
+}
+
+.card .signup form .form-control,
+.card .login form .form-control {
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.card .signup form .form-control input,
+.card .login form .form-control input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.card .signup form .form-control input:focus, .card .signup form .form-control input:valid,
+.card .login form .form-control input:focus,
+.card .login form .form-control input:valid {
+  border-bottom: 2px solid #487eb0;
+}
+
+.card .signup form .form-control input:focus + label,
+.card .signup form .form-control input:valid + label,
+.card .login form .form-control input:focus + label,
+.card .login form .form-control input:valid + label {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  color: #487eb0;
+}
+
+.card .signup form .form-control label,
+.card .login form .form-control label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.card .signup form button,
+.card .login form button {
+  border: none;
+  background-color: #487eb0;
+  color: #fff;
+  padding: 6px 30px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.card .signup form a,
+.card .login form a {
+  display: block;
+  font-size: 16px;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #487eb0;
+}
+
+.card .signup form a:hover,
+.card .login form a:hover {
+  text-decoration: underline;
+}
+
+.card .login {
+  background-color: #fff;
+}
+
+.card .signup {
+  background-color: #fff;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
