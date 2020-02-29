@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Tomorrow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tomorrow", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+
+  .card {
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    margin: 12px;
+    border-radius: 5px;
+    box-shadow: 9px 17px 45px -29px rgba(0, 0, 0, 0.44);
+
+    &__image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &.loading {
+        height: 300px;
+        width: 400px;
+      }
+    }
+
+    &__title {
+      padding: 8px;
+      font-size: 22px;
+      font-weight: 700;
+
+      &.loading {
+        height: 1rem;
+        width: 50%;
+        margin: 1rem;
+        border-radius: 3px;
+      }
+    }
+
+    &__description {
+      padding: 8px;
+      font-size: 16px;
+
+      &.loading {
+        height: 3rem;
+        margin: 1rem;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.loading {
+  position: relative;
+  background-color: #e2e2e2;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    animation: loading 0.8s infinite;
+  }
+}
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+  }
+}

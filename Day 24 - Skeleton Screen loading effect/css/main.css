@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Tomorrow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tomorrow", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.container .card {
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  margin: 12px;
+  border-radius: 5px;
+  -webkit-box-shadow: 9px 17px 45px -29px rgba(0, 0, 0, 0.44);
+          box-shadow: 9px 17px 45px -29px rgba(0, 0, 0, 0.44);
+}
+
+.container .card__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .card__image.loading {
+  height: 300px;
+  width: 400px;
+}
+
+.container .card__title {
+  padding: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.container .card__title.loading {
+  height: 1rem;
+  width: 50%;
+  margin: 1rem;
+  border-radius: 3px;
+}
+
+.container .card__description {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.container .card__description.loading {
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 3px;
+}
+
+.loading {
+  position: relative;
+  background-color: #e2e2e2;
+}
+
+.loading::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.2)), to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  -webkit-animation: loading 0.8s infinite;
+          animation: loading 0.8s infinite;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes loading {
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+/*# sourceMappingURL=main.css.map */
