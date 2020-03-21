@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo 2", cursive;
+}
+
+body {
+  background-color: #bdc3c7;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 40px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
+
+.container .card {
+  max-width: 350px;
+  border-radius: 30px;
+  background: #bdc3c7;
+  -webkit-box-shadow: 20px -20px 60px #a1a6a9, -20px 20px 60px #d9e0e5;
+          box-shadow: 20px -20px 60px #a1a6a9, -20px 20px 60px #d9e0e5;
+  padding: 14px;
+  margin: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.7s all;
+  transition: 0.7s all;
+}
+
+.container .card img {
+  border-radius: 50%;
+}
+
+.container .card h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.container .card p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.container .card ul.social {
+  list-style-type: none;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.container .card ul.social li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.container .card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+/*# sourceMappingURL=main.css.map */

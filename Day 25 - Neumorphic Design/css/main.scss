@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo 2", cursive;
+}
+body {
+  background-color: #bdc3c7;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 40px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+
+  .card {
+    max-width: 350px;
+    border-radius: 30px;
+    background: #bdc3c7;
+    box-shadow: 20px -20px 60px #a1a6a9, -20px 20px 60px #d9e0e5;
+    padding: 14px;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.7s all;
+
+    img {
+      border-radius: 50%;
+    }
+    h2 {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    p {
+      text-align: center;
+      font-size: 17px;
+    }
+
+    ul.social {
+      list-style-type: none;
+      font-size: 20px;
+      margin-top: 12px;
+      li {
+        display: inline;
+        margin-right: 8px;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      //   background: #bdc3c7;
+      //   box-shadow: inset 20px -20px 60px #a1a6a9, inset -20px 20px 60px #d9e0e5;
+    }
+  }
+}
