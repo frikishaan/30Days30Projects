@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+body {
+  background-color: #1abc9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.player {
+  max-width: 300px;
+  border-radius: 30px;
+  background: #1abc9c;
+  -webkit-box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+          box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+}
+
+.player__poster img {
+  max-height: 300px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  -webkit-filter: contrast(60%);
+          filter: contrast(60%);
+}
+
+.player__info {
+  margin: 8px;
+  font-size: 18px;
+  color: #11836c;
+}
+
+.player__progress {
+  width: 95%;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #16a085;
+  -webkit-box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+          box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+  margin: 4px auto;
+  cursor: pointer;
+}
+
+.player__progress__inner {
+  background-color: #fff;
+  width: 0%;
+  height: 100%;
+  border-radius: 2px;
+  position: relative;
+}
+
+.player__progress__inner:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+}
+
+.player__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem;
+}
+
+.player__controls button {
+  border: none;
+  font-size: 28px;
+  background-color: #1abc9c;
+  color: #16a085;
+  cursor: pointer;
+  -webkit-box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+          box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  outline: none;
+}
+
+.player__controls button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  outline: none;
+}
+
+p.info {
+  color: #11836c;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 14px;
+}
+
+::-moz-selection {
+  background-color: #11836c;
+  color: #1ed8b3;
+}
+
+::selection {
+  background-color: #11836c;
+  color: #1ed8b3;
+}
+/*# sourceMappingURL=main.css.map */

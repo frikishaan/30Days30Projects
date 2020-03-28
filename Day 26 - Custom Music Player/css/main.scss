@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+body {
+  background-color: #1abc9c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  max-width: 300px;
+  border-radius: 30px;
+  background: #1abc9c;
+  box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+
+  &__poster {
+    img {
+      max-height: 300px;
+      width: 100%;
+      border-radius: 30px 30px 0 0;
+      filter: contrast(60%);
+    }
+  }
+
+  &__info {
+    margin: 8px;
+    font-size: 18px;
+    color: #11836c;
+  }
+
+  &__progress {
+    width: 95%;
+    height: 6px;
+    border-radius: 2px;
+    background-color: #16a085;
+    box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+    margin: 4px auto;
+    cursor: pointer;
+
+    &__inner {
+      background-color: #fff;
+      width: 0%;
+      height: 100%;
+      border-radius: 2px;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: -2px;
+        right: -5px;
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+
+    button {
+      border: none;
+      font-size: 28px;
+      background-color: #1abc9c;
+      color: #16a085;
+      cursor: pointer;
+      box-shadow: 20px 20px 60px #16a085, -20px -20px 60px #1ed8b3;
+      transition: 0.3s all;
+      outline: none;
+
+      &:active {
+        transform: scale(0.9);
+        outline: none;
+      }
+    }
+  }
+}
+p.info {
+  color: #11836c;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 14px;
+}
+
+::selection {
+  background-color: #11836c;
+  color: #1ed8b3;
+}
