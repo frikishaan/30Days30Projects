@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecf0f1;
+  padding: 12px;
+  overflow-x: hidden;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 8px;
+  max-width: 650px;
+}
+
+.card:before {
+  background-color: #e67e22;
+  border-radius: 20px;
+  content: "";
+  opacity: 0.8;
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  height: 150px;
+  width: 540px;
+  z-index: -1;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.card:hover:before {
+  height: 220px;
+  width: 600px;
+}
+
+.card h2 {
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+  margin-top: 1rem;
+}
+
+.card p {
+  margin-top: 12px;
+}
+
+.card .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.card .links .fab,
+.card .links .fas {
+  margin-right: 8px;
+}
+
+.card .links a {
+  text-decoration: none;
+  padding: 8px 30px;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  margin: 4px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.card .links a:nth-of-type(1) {
+  background-color: #e74c3c;
+}
+
+.card .links a:nth-of-type(2) {
+  background-color: #3498db;
+}
+
+.card .links a:nth-of-type(3) {
+  background-color: #0abde3;
+}
+
+.card .links a:nth-of-type(4) {
+  background-color: #ee5a24;
+}
+
+.card .links a:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+/*# sourceMappingURL=main.css.map */
