@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 0px;
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+
+.container .box {
+  width: 60%;
+  height: 300px;
+  margin: 10px auto;
+  background-color: #1abc9c;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .configuration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.container .configuration .input {
+  /* Range Sliders */
+}
+
+.container .configuration .input .slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 25px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  background-color: #c4c4c4;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  /* For Firefox */
+}
+
+.container .configuration .input .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+
+.container .configuration .input .slider::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+
+.container .configuration .input label {
+  float: left;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.container .configuration .input div {
+  float: right;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.container .configuration .input input[type="text"] {
+  margin-left: 3px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  padding: 2px 8px;
+  margin-bottom: 2rem;
+}
+
+.container .configuration .copy {
+  border: none;
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 10px 40px;
+  width: 200px;
+  margin: 1rem auto;
+  border-radius: 4px;
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .container .box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+  }
+  .container .configuration {
+    margin: 3rem auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

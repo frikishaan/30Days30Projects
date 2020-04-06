@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day X - {title}</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>CSS Box-Shadow Generator</h1>
+    <div class="container">
+      <div class="box">
+        <input type="text" style="display: none" id="code" value="" />
+      </div>
+      <div class="configuration">
+        <div class="input">
+          <label for="horizontal">Horizontal length</label>
+          <div id="horizontal-val">10px</div>
+          <input
+            type="range"
+            min="-200"
+            max="200"
+            value="10"
+            class="slider"
+            id="horizontal"
+          />
+        </div>
+        <div class="input">
+          <label for="vertical">Vertical length</label>
+          <div id="vertical-val">13px</div>
+          <input
+            type="range"
+            min="-200"
+            max="200"
+            value="13"
+            class="slider"
+            id="vertical"
+          />
+        </div>
+        <div class="input">
+          <label for="blur">Blur Radius</label>
+          <div id="blur-val">50px</div>
+          <input
+            type="range"
+            min="0"
+            max="300"
+            value="50"
+            class="slider"
+            id="blur"
+          />
+        </div>
+        <div class="input">
+          <label for="spread">Spread Radius</label>
+          <div id="spread-val">-13px</div>
+          <input
+            type="range"
+            min="-200"
+            max="200"
+            value="-13"
+            class="slider"
+            id="spread"
+          />
+        </div>
+        <div class="input">
+          <label for="opacity">Opacity</label>
+          <div id="opacity-val">0.75</div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="75"
+            class="slider"
+            id="opacity"
+          />
+        </div>
+        <button class="copy">Copy code</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
