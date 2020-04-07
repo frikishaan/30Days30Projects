@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  padding: 20px;
+  //   background-color: #ecf0f1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+h3.heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  select {
+    margin: 1rem auto;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  max-width: 1200px;
+
+  .card {
+    width: 300px;
+    max-width: 300px;
+    margin: 12px;
+    padding: 1.5rem;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 7px 6px 26px -17px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: 0.3s all;
+
+    h3 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+
+    &:nth-child(1) {
+      background-color: #3498db;
+    }
+    &:nth-child(2) {
+      background-color: #e74c3c;
+    }
+    &:nth-child(3) {
+      background-color: #2ecc71;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.world-map,
+.country-chart {
+  width: 900px;
+  max-width: 100%;
+  margin: 8px auto;
+  box-shadow: 2px 3px 18px -17px rgba(0, 0, 0, 1);
+  margin-bottom: 2rem;
+}

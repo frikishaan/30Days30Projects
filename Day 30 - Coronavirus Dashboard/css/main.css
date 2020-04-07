@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+h3.heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.select {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select select {
+  margin: 1rem auto;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+.cards .card {
+  width: 300px;
+  max-width: 300px;
+  margin: 12px;
+  padding: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 6px 26px -17px black;
+          box-shadow: 7px 6px 26px -17px black;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.cards .card h3 {
+  font-size: 40px;
+}
+
+.cards .card p {
+  font-size: 20px;
+}
+
+.cards .card:nth-child(1) {
+  background-color: #3498db;
+}
+
+.cards .card:nth-child(2) {
+  background-color: #e74c3c;
+}
+
+.cards .card:nth-child(3) {
+  background-color: #2ecc71;
+}
+
+.cards .card:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.world-map,
+.country-chart {
+  width: 900px;
+  max-width: 100%;
+  margin: 8px auto;
+  -webkit-box-shadow: 2px 3px 18px -17px black;
+          box-shadow: 2px 3px 18px -17px black;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

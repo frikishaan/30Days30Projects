@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day 30 - Coronavirus Dashboard</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h2>Coronavirus Dashboard</h2>
+    <div class="cards">
+      <div class="card">
+        <h3 id="cases">--</h3>
+        <p>Total Cases</p>
+      </div>
+      <div class="card">
+        <h3 id="deaths">--</h3>
+        <p>Total Deaths</p>
+      </div>
+      <div class="card">
+        <h3 id="recovered">--</h3>
+        <p>Total Recovered</p>
+      </div>
+    </div>
+    <h3 class="heading">World Data</h3>
+    <div class="world-map"></div>
+    <h3 class="heading">Country Specific</h3>
+    <div class="select">
+      <select id="country"></select>
+    </div>
+    <div class="country-chart"></div>
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
